@@ -1,0 +1,17 @@
+<button class ='btn btn-info' [disabled] = !allowNewCounter (click) = "onCounterCreate()">
+<p [innerText] = textoBoton ></p>
+
+</button>
+<p [innerText] = counterCreationStatus ></p>
+
+<!-- <label>Counter Name</label>
+<input type="text" (input) = onUpdateCounterName($event)>  -->
+
+<label>Counter Name </label>
+<input type="text" [(ngModel)] = "counterName"> 
+
+<!-- <p> {{counterName}}</p> -->
+
+
+<app-counter></app-counter>
+<app-counter></app-counter>
